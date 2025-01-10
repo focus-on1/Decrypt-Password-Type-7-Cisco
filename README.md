@@ -1,65 +1,105 @@
-# Décryptage des mots de passe Cisco
+# 🔐 Décryptage des mots de passe Cisco - CryptFocus
+[![Licence MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)]()
 
-## Description
-Ce script Python est conçu pour démontrer le processus de décryptage des mots de passe Cisco. Il fournit une explication détaillée de chaque étape, y compris l'extraction de l'offset, la conversion hexadécimale, et l'utilisation de la clé Cisco pour déchiffrer le mot de passe chiffré.
+## 📜 Description
 
-## Fonctionnalités
-- Extraction et affichage de l'offset.
-- Conversion de la partie hexadécimale en décimale.
-- Décryptage détaillé à l'aide de la clé Cisco et de l'opération XOR.
-- Affichage du processus de déchiffrement pour chaque caractère.
+CryptFocus est un outil avancé pour l'analyse et le décryptage des mots de passe Cisco Type 7. Développé avec Python et une interface web moderne, il offre une approche didactique du processus de chiffrement tout en fournissant des fonctionnalités d'analyse puissantes.
 
-## Prérequis
-- Python 3.x
+### 🌟 Caractéristiques principales
 
-## Installation
-Aucune installation particulière n'est nécessaire. Assurez-vous simplement que Python 3 est installé sur votre machine.
+- 🔓 Décryptage de mots de passe Cisco Type 7
+- 🔒 Chiffrement en Type 7
+- 📊 Analyse de la force des mots de passe
+- ⚡ Interface web moderne et réactive
+- 🔍 Visualisation détaillée du processus
+- 🚀 Calcul de temps de force brute
+- 📱 Support mobile et desktop
 
-## Utilisation
-1. Clonez ce dépôt ou copiez le script sur votre machine locale.
-2. Exécutez le script avec Python :
+## 🛠️ Technologies utilisées
 
-    ```bash
-    python main.py
-    ```
+- **Backend**: 
+  - Python 3.8+
+  - Flask
+  - Cryptographie
 
-3. Entrez le mot de passe chiffré lorsqu'il vous est demandé.
-4. Le script affichera les étapes détaillées du déchiffrement et le mot de passe en clair à la fin.
+- **Frontend**: 
+  - HTML5/CSS3
+  - JavaScript moderne
+  - TailwindCSS
+  - Matrix Animation
 
-## Exemple de sortie
-```plaintext
-Clé Cisco: dsfd;kfoA,.iyewrkldJKDHSUB@
-Longueur de la clé: 26 caractères
+## 🚀 Installation
 
-Mot de passe chiffré: 060A4B5C
-
-1. OFFSET:
-Premier deux caractères (offset): 06
-Offset en décimal: 6
-
-2. PARTIE CHIFFRÉE:
-Portion hex: 0A4B5C
-
-3. CONVERSION HEX -> DECIMAL:
-Paire hex 0A -> décimal 10
-Paire hex 4B -> décimal 75
-Paire hex 5C -> décimal 92
-
-4. PROCESSUS DE DÉCHIFFREMENT DÉTAILLÉ:
-...
-
-5. RÉSULTAT FINAL:
-Mot de passe déchiffré: mypassword
+1. **Clonez le repository**
+```bash
+git clone https://github.com/focus-on1/cisco-password-decrypt.git
+cd cisco-password-decrypt
 ```
 
-## Structure du code
-- **Clé Cisco** : Une chaîne fixe utilisée pour le déchiffrement.
-- **Offset** : Les deux premiers caractères du mot de passe chiffré.
-- **Conversion Hex -> Décimal** : Processus de transformation de la partie hexadécimale en valeurs décimales.
-- **Décryptage détaillé** : Utilisation de l'opération XOR pour retrouver chaque caractère en clair.
+2. **Lancez l'application**
+```bash
+python app.py
+```
 
-## Avertissement
-Ce script est uniquement à des fins éducatives. Toute utilisation non autorisée pour accéder à des informations protégées est illégale et contraire à l'éthique.
+## 💻 Utilisation
 
-## Auteur
-Ce projet a été développé par [Focus](https://github.com/focus-on1/).
+### Interface Web
+1. Accédez à `[http://localhost:5000](https://website-cisco-type-7.vercel.app/)`
+2. Choisissez l'opération souhaitée :
+   - 🔓 Décryptage
+   - 🔒 Chiffrement
+   - 📊 Analyse de force brute
+
+
+## 📚 Documentation
+
+### Format des mots de passe Type 7
+```
+AABBCCDDEEEE...
+AA       : Offset (2 caractères)
+BBCCDD.. : Mot de passe chiffré (hex)
+```
+
+### Exemple de sortie détaillée
+```plaintext
+🔑 Clé Cisco: dsfd;kfoA,.iyewrkldJKDHSUB@
+📏 Longueur: 26 caractères
+
+🔍 Analyse du mot de passe chiffré: 060A4B5C
+├── Offset: 06 (décimal: 6)
+├── Partie chiffrée: 0A4B5C
+└── Conversion hex -> décimal: [10, 75, 92]
+```
+
+## 🌐 Application Web
+Visitez [CryptFocus Web](https://website-cisco-type-7.vercel.app/) pour utiliser l'interface web.
+
+## 🤝 Contribution
+Les contributions sont bienvenues ! Voici comment vous pouvez contribuer :
+
+1. 🍴 Forkez le projet
+2. 🔨 Créez votre branche (`git checkout -b feature/AmazingFeature`)
+3. 💾 Committez vos changements (`git commit -m 'Add AmazingFeature'`)
+4. 📤 Pushez vers la branche (`git push origin feature/AmazingFeature`)
+5. 🔍 Ouvrez une Pull Request
+
+## ⚠️ Avertissement
+Cet outil est destiné à des fins éducatives et de test uniquement. L'utilisation non autorisée pour accéder à des systèmes protégés est illégale.
+
+## 📝 Licence
+Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
+
+## 👨‍💻 Auteur
+**Focus** - [GitHub](https://github.com/focus-on1/)
+
+## 🙏 Remerciements
+- 🎯 Cisco pour la documentation
+- 🎨 TailwindCSS pour le design
+- 🌟 Tous les contributeurs
+
+---
+⭐️ Si vous trouvez ce projet utile, n'oubliez pas de lui donner une étoile !
+
+[⬆️ Retour en haut](#-décryptage-des-mots-de-passe-cisco---cryptfocus)
