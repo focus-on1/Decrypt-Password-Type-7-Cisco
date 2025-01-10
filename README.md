@@ -40,7 +40,7 @@ cd cisco-password-decrypt
 
 2. **Lancez l'application**
 ```bash
-python app.py
+python main.py
 ```
 
 ## 💻 Utilisation
