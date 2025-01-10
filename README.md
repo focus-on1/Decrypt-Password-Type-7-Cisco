@@ -34,7 +34,7 @@ CryptFocus est un outil avancé pour l'analyse et le décryptage des mots de pas
 
 1. **Clonez le repository**
 ```bash
-git clone https://github.com/focus-on1/cisco-password-decrypt.git
+git clone https://github.com/focus-on1/Decrypt-Password-Type-7-Cisco.git
 cd cisco-password-decrypt
 ```
 
