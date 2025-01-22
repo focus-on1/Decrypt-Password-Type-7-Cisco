@@ -94,10 +94,6 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour p
 ## 👨‍💻 Auteur
 **Focus** - [GitHub](https://github.com/focus-on1/)
 
-## 🙏 Remerciements
-- 🎯 Cisco pour la documentation
-- 🎨 TailwindCSS pour le design
-- 🌟 Tous les contributeurs
 
 ---
 ⭐️ Si vous trouvez ce projet utile, n'oubliez pas de lui donner une étoile !
